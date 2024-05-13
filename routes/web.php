@@ -28,7 +28,7 @@ Route::post('/login', [LoginController::class,'loginpost'])->name('loginpost');
 
 Route::get('/image', [ImageController::class,'show'])->name("show");
 
-Route::get('/image', [ImageController::class,'uploadImage'])->name("uploadImage");
+Route::post('/image', [ImageController::class,'uploadImage'])->name("uploadImage");
 
 
 
