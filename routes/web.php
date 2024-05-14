@@ -16,7 +16,7 @@ Route::get('/', function () {
 Route::get('/contact', [ContactController::class,'index']);
 Route::get('/home', [HomeController::class,'index']);
 
-Route::redirect('home','contact');
+// Route::redirect('home','contact');
 
 Route::get('/product', ProductController::class);
 
