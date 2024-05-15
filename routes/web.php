@@ -14,6 +14,7 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', [ContactController::class,'index']);
+
 Route::get('/home', [HomeController::class,'index']);
 
 // Route::redirect('home','contact');

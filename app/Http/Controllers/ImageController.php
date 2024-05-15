@@ -15,7 +15,7 @@ class ImageController extends Controller
     {
         $request->validate([
             "file" => "required|image|mimes:jpeg,png,jpg,gif|max:2048"
-        ],[
+        ], [
             'file.required' => 'File is required',
         ]);
         dd("validation is successful");
